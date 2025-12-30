@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #000000;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+}
+
+/* Header / Logo */
+header {
+  padding: 20px;
+}
+
+.logo {
+  height: 60px;
+}
+
+/* Video */
+.video-container {
+  width: 100%;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 56.25vw; /* 16:9 ratio */
+  max-height: 100vh;
+  border: none;
+}
