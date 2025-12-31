@@ -29,4 +29,7 @@ html, body {
   object-fit: cover;
   object-position: center center;
   display: block;
+
+  /* subtle zoom-out */
+  transform: scale(0.96);
 }
