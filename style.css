@@ -27,15 +27,19 @@ html, body {
 .video-container video {
   width: 100%;
   height: 100%;
-  object-fit: cover;         /* crop as needed to fill screen */
-  object-position: center;   /* keep main content centered horizontally and vertically */
+  object-fit: cover;         
+  object-position: center;   
   display: block;
 }
 
-/* Optional: mobile-specific tweaks if you want slight zoom-in or fine tuning */
+/* Mobile: slight zoom out to fit full text */
 @media (max-width: 768px) {
   .video-container video {
-    object-fit: cover;
-    object-position: center; /* keep video centered for mobile */
+    width: auto;       /* let width scale naturally */
+    height: 100%;      /* fill height */
+    object-fit: contain; /* fit entire width without cropping letters */
+    object-position: center; /* keep centered horizontally */
+    max-width: 100vw;  /* avoid overflow */
+    max-height: 100vh;
   }
 }
