@@ -22,14 +22,19 @@ html, body {
   background: #000;
 }
 
-/* Video fills container and crops edges */
+/* Default: desktop & large screens */
 .video-container video {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
   display: block;
+  transform: scale(1); /* no zoom on desktop */
+}
 
-  /* subtle zoom-out */
-  transform: scale(0.96);
+/* Mobile only: slight zoom-out */
+@media (max-width: 768px) {
+  .video-container video {
+    transform: scale(0.96);
+  }
 }
