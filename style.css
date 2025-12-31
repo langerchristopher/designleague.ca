@@ -37,7 +37,7 @@ html, body {
 /* Mobile: slight zoom out so letters fit without black bars */
 @media (max-width: 768px) {
   .video-container video {
-    transform: scale(0.9); /* adjust between 0.9 - 0.95 as needed */
+    transform: scale(0.8); /* adjust between 0.8 - 0.95 as needed */
     object-fit: cover;      /* keep filling screen */
     object-position: center; /* stay centered horizontally and vertically */
   }
