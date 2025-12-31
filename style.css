@@ -35,6 +35,6 @@ html, body {
 /* Mobile only: slight zoom-out */
 @media (max-width: 768px) {
   .video-container video {
-    transform: scale(0.95);
+    transform: scale(0.90);
   }
 }
